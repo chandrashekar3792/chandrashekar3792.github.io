@@ -1,368 +1,224 @@
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
-<style type="text/css">
-	$dark: #2c343b;
-$pink: #E65B53;
-$light: #FFFCE2;
-$tan: #FFE4B6;
-$text: #222222;
-$lighttext: #4F4F4F;
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
+		<!-- Header -->
+			<div id="header">
 
-/* IE9  - Also picked up by most modern browsers */
-::selection {
-    background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-/* Safari & Chrome - Webkit Rendering */
-::-webkit-selection {
-    background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-/* Mozilla based - Gecko Rendering */    
-::-moz-selection {
-     background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-body{background-color: $dark;
-margin:7px;
-border:2px solid #fff;
-font-family: 'Open Sans', sans-serif;
-float:left;
-width:100%;
-  height:100%;
-}
+				<div class="top">
 
-nav{
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin:0px;
-  padding:0px;
-  width:100%;
-  text-align:center;
-  background-color:#fff;
-  border-bottom:2px solid #fff;
-  ul{background-color:#fff;
-    padding:0px;
-    display:inline-block;
-    margin:0px;
-    li{
-      display:inline-block;
-      
-      
-      a{text-decoration:none;color:$dark;font-weight:bold; display:block;padding: 15px 40px; 
-        &:hover{background-color:#D9D6C0;color:$dark;}
-      }
-      
-    }
-  }
-}
-.hero{
-text-align:center;
-margin:50px 0px;
-  h2{
-  color:#fff;
-  text-transform:uppercase;
-  font-size:21px;
-  line-height: 28px;
-  }
-    p{
-      color: $light;
-      span.highlight{color:$pink;}
-      a{color:$pink;} 
-    }  
-}
-.content{
-  float:left;display:block;clear:both;
-  width:100%;
-  padding:45px 0px;
-  background-color:#fff;
-  .leftcontent{
-    float:left;
-    width:50%;
-    display:inline-block;
-    .innerblock{float:right;}
-    .bloghighlight{
-      max-width:550px;
-      margin:0px auto;
-      
-      article{margin-top:25px;}
-        h4{
-          text-align:center;
-          font-size:19px;
-          margin:0;
-        }
-        .article-title{
-          h3{color: $dark;font-size:14px;line-height:28px;margin:0px;}
-        }
-      .article-details{
-        h3.date{
-          font-size:12px;
-          color: $lighttext;
-          font-height:14px;
-          margin:0px;
-        }
-      }
-      .article-summary{
-        font-size:14px;
-        line-height:1.5em;
-        a.readmore{
-          text-decoration:none;
-          font-family: 'Open Sans Condensed', sans-serif;
-          color: $pink;
-          font-weight:700;
-          float:right;
-          display:block;
-          padding:3px 10px;
-          margin-bottom:25px;
-          &:hover{color:#fff;background-color:$pink;}
-        }
-      }
-    }
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Jane Doe</h1>
+							<p>Hyperspace Engineer</p>
+						</div>
 
-  }
-  .rightcontent{
-    float:left;
-    width:50%;
-    display:inline-block;
-    .innerblock{float:left;}
-    
-    ul{
-      margin-top:25px;
-      li{
-        list-style-type:none;
-        color:$dark;
-        padding-top:15px;
-        a{
-        font-weight:bold;
-        font-size:14px;
-          color:$pink;
-          word-wrap:break-word;
-        }
-      }
-    }
-    .highlight{
-      max-width:550px;
-      margin:0 auto;
-      
-      img{
-        width:225px;
-        height:225px;
-      }
-      h2{
-        text-align:center;
-        font-size:19px;
-        margin:0;
-      }
-      ul.portfolio-images{
-        li{
-          display:inline-block;
-          padding:0;
-        }
-      }
-    }
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-  }
-  .innerblock{
-  padding:0px 30px;
-  }
-}
+								Prologue's nav expects links in one of two formats:
 
-.link{
-  display:block;
-  clear:both;
-  margin:0 auto;
-  width:150px;
-  text-align:center;
-  
-  a{
-      display:block;
-      background-color:$pink;
-      color:#fff;
-      text-decoration:none;
-      padding:10px 25px;
-      border-radius:7px;
-          
-      &:hover{background-color:$lighttext;}
-    }
-}
+								1. Hash link (scrolls to a different section within the page)
 
-.expertise{
-  float:left;
-  width:100%;
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-  .col13{
-    display:inline-block;
-    width:25%;
-    margin:4%;
-    color:#fff;
-    h2{text-align:center;}
-    p{}
-  }
-  h3{
-    text-transform:uppercase;
-    font-size:2em;
-    letter-spacer:2px;
-    text-align:center;
-    padding:35px 0px 0px 0px;
-    color:#fff;
-  }
-  .exwrapper{
-    padding-bottom:75px;
-  }
-  
-  .expert1{
-      display:block;
-  }
+								2. Standard link (sends the user to another page/site)
 
-      
-      
-  
-}
-.arrow_box_pink {
-	position: relative;
-	background: #E65B53;
-}
-.arrow_box_pink:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(230, 91, 83, 0);
-	border-top-color: #E65B53;
-	border-width: 30px;
-	margin-left: -30px;
-}
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
-footer{
-  float:left;
-  clear:both;
-  padding:50px 0px;
-  width:100%;
-  background-color:$tan;
-  ul.cta{
-    max-width:550px;
-    margin:0 auto;
-    li{
-      list-style-type:none;
-      color:$dark;
-      a{
-        color:$pink;
-      }
-    }
-  }
-}
-</style>
-<header>
-<nav role='navigation'>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Clients</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Blog</a></li>
-  </ul>
-</nav>  
-</header>
-<div class="hero">
-  <h2>Hello.<br />My name is Geoffrey Shepard.<br />I love web design.</h2>
-  <p>Currently I am <span class="highlight">available for hire</span></p>
-  <p>I am also building a live streaming web design community</p>
-  <p><a href="https://twitter.com/webnationlive" target="_blank">Follow us @webnationlive to stay connected</a></p>
-</div>
-<div class="content">
-  <div class="leftcontent">
-    <div class="innerblock">
-      <div class="bloghighlight">
-        <h4>What I am thinking....</h4>
-        <article>
-          <div class="article-title">
-            <h3>Why typography is important</h3>
-          </div>
-          <div class="article-details">
-            <h3 class="date">August 15, 2013</h3>
-          </div>
-          <div class="article-summary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ex aperiam quam explicabo labore unde quasi soluta voluptatibus vel praesentium tenetur iure quo dolor a consequatur tempore ratione nostrum? Placeat... <a href="#" class="readmore">continue reading</a></p>
-          </div>
-        </article>
-                <article>
-          <div class="article-title">
-            <h3>Colors are important</h3>
-          </div>
-          <div class="article-details">
-            <h3 class="date">August 15, 2013</h3>
-          </div>
-          <div class="article-summary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ex aperiam quam explicabo labore unde quasi soluta voluptatibus vel praesentium tenetur iure quo dolor a consequatur tempore ratione nostrum? Placeat... <a href="#" class="readmore">continue reading</a></p>
-          </div>
-        </article>
-                <article>
-          <div class="article-title">
-            <h3>Layouts are also fundamental to webdesign.</h3>
-          </div>
-          <div class="article-details">
-            <h3 class="date">August 15, 2013</h3>
-          </div>
-          <div class="article-summary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ex aperiam quam explicabo labore unde quasi soluta voluptatibus vel praesentium tenetur iure quo dolor a consequatur tempore ratione nostrum? Placeat... <a href="#" class="readmore">continue reading</a></p>
-          </div>
-        </article>
-        <div class="link">
-          <a href="#">Read More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="rightcontent">
-    <div class="innerblock">
-        <div class="highlight">
-          <h2>Recent Projects</h2>
-          <ul class="portfolio-images">
-            <li><img src="http://i.imgur.com/u3E174C.png" alt="" /></li>
-            <li><img src="http://i.imgur.com/u3E174C.png" alt="" /></li>
-            <li><img src="http://i.imgur.com/u3E174C.png" alt="" /></li>
-            <li><img src="http://i.imgur.com/u3E174C.png" alt="" /></li>
-          </ul>
-         <div class="linkwrapper">
-          <div class="link">
-            <a href="#">See More</a>
-          </div>
-         </div>
+				</div>
 
-        </div>
-    </div>
-  </div>
-</div>
+				<div class="bottom">
 
-<div class="expertise">
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
 
-    <h3 class="sectionheader">What I do...</h3>
+				</div>
 
-  <div class="expert1">
-    <div class="exwrapper">
-      <div class="col13">
-    <h2>FRONT-END DESIGN</h2><p>A front-end designer’s goal is to make websites that are easily understood and accessible. This includes cross-browser, cross-platform, and cross device testing. As a designer I am concerned with the content, colors, theme, accessibility, page loading, usability, and most importantly the end-users experience.</p></div>
-      <div class="col13">
-    <h2>RESPONSIVE WEB DESIGN</h2><p>is an approach that is aimed at providing the best viewing experience regardless of the device, browser, platform, or resolution. Responsive Web Design (RWD) provides an easy way to read and navigate the website with minimal resizing, panning, and scrolling.</p></div>
-      <div class="col13">
-    <h2>INTERFACE DESIGN</h2><p>is the design of websites, applications, and software with the focus on the user’s experience and interaction. The purpose is to make an efficient and simple interface where the user doesn’t have to think about how to accomplish their goals. This design process has to balance technical functionality and visual design that will adapt to the wide variety of users and needs</p></div>
-      
-  </div>
-</div> 
+			</div>
 
+		<!-- Main -->
+			<div id="main">
 
-<footer>
-   <ul class="cta">
-     <li>I love answering questions as I work, follow me at <a href="https://twitter.com/GJShepard"> https://twitter.com/GJShepard</a> to know when I am streaming next.</li>
-     <li>I usually live stream my code pen work on <a href="http://www.justin.tv/designtheweb">http://www.justin.tv/designtheweb</a></li>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
 
-   </ul>
-</footer>
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
+								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
 
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus.</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Ipsum Feugiat</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Rhoncus Semper</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Magna Nullam</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
